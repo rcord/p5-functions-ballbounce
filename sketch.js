@@ -11,11 +11,7 @@ function setup(){
 function draw(){
     background(0);
 
-    //display ball
-    stroke(255);
-    strokeWeight(4);
-    fill(50,250,50);
-    ellipse(x, y, 50, 50);
+display();
 
     
     //make ball move
@@ -29,4 +25,12 @@ function draw(){
      if(y>400 || y<0){
         speedy = -speedy;
     }
+} 
+
+function display(){
+ //display ball
+    stroke(255);
+    strokeWeight(4);
+    fill(50,250,50);
+    ellipse(x, y, 50, 50);   
 }
